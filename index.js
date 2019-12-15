@@ -6,8 +6,7 @@ const server = http.createServer(function(req, res) {
   console.log(`received ${req.method} request for: ${req.url}`);
   
   res.writeHead(200, {'Contenet-Type': 'text/plain'});
-
-  res.end("Hello World");
+  res.end("<h1>Hello World</h1>");
 });
 
 server.listen(8080, 'localhost', null, function(req, res) {
