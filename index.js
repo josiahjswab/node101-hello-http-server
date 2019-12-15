@@ -5,7 +5,7 @@ const server = http.createServer(function(req, res) {
 
   console.log(`received ${req.method} request for: ${req.url}`);
   
-  res.writeHead(200, {'Contenet-Type': 'text/plain'});
+  res.writeHead(200, {'content-type': 'text/html'});
   res.end("<h1>Hello World</h1>");
 });
 
